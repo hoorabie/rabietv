@@ -1,0 +1,49 @@
+{
+  "app_enabled": true,
+  "maintenance_title": "التطبيق متوقف مؤقتاً للصيانة",
+  "maintenance_message": "نعمل حالياً على تحديث وتحسين السيرفرات. يرجى المحاولة مرة أخرى بعد قليل.",
+  "contact_url": "",
+  "contact_label": "تواصل معنا",
+  "announcement": {
+    "id": "v1_1_welcome",
+    "enabled": false,
+    "title": "تحديث جديد في RABIE TV",
+    "message": "تمت إضافة سيرفر 2 لأهم المباريات وتحسين استقرار البث المباشر.",
+    "action_url": "",
+    "action_label": "حسناً"
+  },
+  "update": {
+    "latest_version_code": 2,
+    "latest_version_name": "1.1.0",
+    "min_supported_version_code": 1,
+    "force_update": false,
+    "apk_url": "https://github.com/hoorabie/rabietv/releases/latest/download/rabie-tv-release.apk",
+    "changelog": "• إصلاح مشكلة بقاء مباريات الأمس عالقة\n• إضافة سيرفر 2 (أهم المباريات)\n• دعم التحديث التلقائي من داخل التطبيق\n• دعم الإشعارات الفورية والتحكم عن بُعد"
+  },
+  "sources": [
+    {
+      "id": "server1",
+      "label": "🟢 سيرفر 1",
+      "enabled": true,
+      "matches_url": "https://rabietv-c6a.pages.dev/api/matches",
+      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
+      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "referer": "https://bladi-sport.live/",
+      "origin": "https://bladi-sport.live",
+      "default_type": "dash",
+      "use_proxy": false
+    },
+    {
+      "id": "server2",
+      "label": "🔵 سيرفر 2",
+      "enabled": true,
+      "matches_url": "https://rabietv-c6a.pages.dev/api/featured-matches",
+      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
+      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "referer": "https://majed-kooora.com/",
+      "origin": "https://majed-kooora.com",
+      "default_type": "hls",
+      "use_proxy": false
+    }
+  ]
+}
