@@ -18,7 +18,7 @@
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "• إصلاح مشكلة بقاء مباريات الأمس عالقة\n• إضافة سيرفر 2 (أهم المباريات)\n• دعم التحديث التلقائي من داخل التطبيق\n• دعم الإشعارات الفورية والتحكم عن بُعد"
+    "changelog": "•تمت إضافة سيرفر 3 لأهم المباريات وتحسين استقرار البث المباشر  \n"
   },
   "sources": [
     {
