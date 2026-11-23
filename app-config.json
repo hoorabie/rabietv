@@ -13,21 +13,21 @@
     "action_label": "حسناً"
   },
   "update": {
-    "latest_version_code": 5,
-    "latest_version_name": "1.1.3",
+    "latest_version_code": 6,
+    "latest_version_name": "1.1.4",
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "• تمت إضافة سيرفر 3 لأهم المباريات وتحسين استقرار البث المباشر"
+    "changelog": "• تشغيل جميع السيرفرات (1 و 2 و 3) مباشرة داخل التطبيق بدون أي اعتماد على خوادم خارجية\n• سرعة أعلى واستقرار كامل حتى مع آلاف المستخدمين"
   },
   "sources": [
     {
       "id": "server1",
       "label": "🟢 سيرفر 1",
       "enabled": true,
-      "matches_url": "https://rabietv-c6a.pages.dev/api/matches",
-      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
-      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "matches_url": "direct://server1",
+      "stream_url_template": "direct://server1/{watch_id}",
+      "proxy_url_template": "",
       "referer": "https://bladi-sport.live/",
       "origin": "https://bladi-sport.live",
       "default_type": "dash",
@@ -37,21 +37,21 @@
       "id": "server2",
       "label": "🔵 سيرفر 2",
       "enabled": true,
-      "matches_url": "https://rabietv-c6a.pages.dev/api/featured-matches",
-      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
-      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "matches_url": "direct://server2",
+      "stream_url_template": "direct://server2/{watch_id}",
+      "proxy_url_template": "",
       "referer": "https://majed-kooora.com/",
       "origin": "https://majed-kooora.com",
       "default_type": "hls",
-      "use_proxy": true
+      "use_proxy": false
     },
     {
       "id": "server3",
       "label": "🟣 سيرفر 3",
       "enabled": true,
-      "matches_url": "https://rabietv-c6a.pages.dev/api/123tv-matches",
-      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
-      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "matches_url": "direct://server3",
+      "stream_url_template": "direct://server3/{watch_id}",
+      "proxy_url_template": "",
       "referer": "https://misty-frog-31a0.123tvapp3.workers.dev/",
       "origin": "https://misty-frog-31a0.123tvapp3.workers.dev",
       "default_type": "hls",
