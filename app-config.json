@@ -18,7 +18,7 @@
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "•تمت إضافة سيرفر 3 لأهم المباريات وتحسين استقرار البث المباشر  \n"
+    "changelog": "• تمت إضافة سيرفر 3 لأهم المباريات وتحسين استقرار البث المباشر"
   },
   "sources": [
     {
@@ -42,6 +42,18 @@
       "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
       "referer": "https://majed-kooora.com/",
       "origin": "https://majed-kooora.com",
+      "default_type": "hls",
+      "use_proxy": true
+    },
+    {
+      "id": "server3",
+      "label": "🟣 سيرفر 3",
+      "enabled": true,
+      "matches_url": "https://rabietv-c6a.pages.dev/api/123tv-matches",
+      "stream_url_template": "https://rabietv-c6a.pages.dev/api/stream?watch_id={watch_id}",
+      "proxy_url_template": "https://rabietv-c6a.pages.dev/api/stream-proxy?url={url}",
+      "referer": "https://misty-frog-31a0.123tvapp3.workers.dev/",
+      "origin": "https://misty-frog-31a0.123tvapp3.workers.dev",
       "default_type": "hls",
       "use_proxy": false
     }
