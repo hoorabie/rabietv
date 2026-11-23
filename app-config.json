@@ -13,12 +13,12 @@
     "action_label": "حسناً"
   },
   "update": {
-    "latest_version_code": 7,
-    "latest_version_name": "1.1.5",
+    "latest_version_code": 8,
+    "latest_version_name": "1.1.6",
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "• إصلاح عرض مباريات سيرفر 3 (123TV) على جميع أجهزة أندرويد\n• إصلاح تشغيل البث المباشر في سيرفر 2 وسيرفر 3 مع تشغيل الفيديو مباشرة بدون بروكسي"
+    "changelog": "• إصلاح ظهور زر مشاهدة البث المباشر وتشغيل الجودات في سيرفر 3 (123TV)"
   },
   "sources": [
     {
