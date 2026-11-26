@@ -5,34 +5,78 @@
   "contact_url": "",
   "contact_label": "تواصل معنا",
   "announcement": {
-    "id": "v1_1_welcome",
+    "id": "v1_3_servers_hub",
     "enabled": false,
-    "title": "تحديث جديد في RABIE TV",
-    "message": "تمت إضافة سيرفر 2 لأهم المباريات وتحسين استقرار البث المباشر.",
+    "title": "تحديث ضخم في RABIE TV",
+    "message": "تمت إضافة بوابة السيرفرات (6 سيرفرات قنوات مباشرة شغالة 100%) مع واجهة Grid وتبويب مستقل لجدول المباريات.",
     "action_url": "",
     "action_label": "حسناً"
   },
   "update": {
-    "latest_version_code": 10,
-    "latest_version_name": "1.2.1",
+    "latest_version_code": 11,
+    "latest_version_name": "1.3.0",
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "• تفعيل الاكتشاف التلقائي لدومين سيرفر القنوات المباشرة النشط (General TV v2) لضمان استمرار العمل بدون انقطاع"
+    "changelog": "• واجهة جديدة بتبويبين: القنوات المباشرة (Grid لجميع السيرفرات) وجدول المباريات (سيرفر 1، 2، 3)\n• إضافة 5 سيرفرات قنوات جديدة تم فحصها حياً: Fallaka TV و Albasha TV و OTF TV و Dax TV و AKO TV بجانب General TV\n• تفعيل دعم روابط البث HTTP/HTTPS و ClearKey DRM"
   },
-  "sources": [
+  "live_servers": [
     {
       "id": "genral",
-      "label": "القنوات المباشرة",
-      "enabled": true,
-      "matches_url": "direct://genral",
-      "stream_url_template": "direct://genral/{watch_id}",
-      "proxy_url_template": "",
-      "referer": "",
-      "origin": "",
-      "default_type": "hls",
-      "use_proxy": false
+      "name": "General TV",
+      "subtitle": "السيرفر الرئيسي",
+      "badge": "⭐ الرئيسي",
+      "accent_color": "#10B981",
+      "icon_text": "GENERAL\nTV",
+      "enabled": true
     },
+    {
+      "id": "fallaka",
+      "name": "Fallaka TV",
+      "subtitle": "باقات رياضية وعربية",
+      "badge": "37 باقة",
+      "accent_color": "#0EA5E9",
+      "icon_text": "FALLAKA\nTV",
+      "enabled": true
+    },
+    {
+      "id": "albasha",
+      "name": "Albasha TV",
+      "subtitle": "قنوات 4K و HD",
+      "badge": "قنوات ضخمة",
+      "accent_color": "#8B5CF6",
+      "icon_text": "ALBASHA\nTV",
+      "enabled": true
+    },
+    {
+      "id": "otf",
+      "name": "OTF TV",
+      "subtitle": "جودات متعددة سريعة",
+      "badge": "SD / HD",
+      "accent_color": "#F59E0B",
+      "icon_text": "OTF\nTV",
+      "enabled": true
+    },
+    {
+      "id": "dax",
+      "name": "Dax TV",
+      "subtitle": "باقات مشفرة ورياضية",
+      "badge": "Multi",
+      "accent_color": "#EF4444",
+      "icon_text": "DAX\nTV",
+      "enabled": true
+    },
+    {
+      "id": "ako",
+      "name": "AKO TV",
+      "subtitle": "قنوات وباقات متنوعة",
+      "badge": "28 باقة",
+      "accent_color": "#EC4899",
+      "icon_text": "AKO\nTV",
+      "enabled": true
+    }
+  ],
+  "sources": [
     {
       "id": "server1",
       "label": "🟢 سيرفر 1",
