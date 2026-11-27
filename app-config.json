@@ -5,20 +5,20 @@
   "contact_url": "",
   "contact_label": "تواصل معنا",
   "announcement": {
-    "id": "v1_3_servers_hub",
+    "id": "v1_3_1_fix",
     "enabled": false,
-    "title": "تحديث ضخم في RABIE TV",
-    "message": "تمت إضافة بوابة السيرفرات (6 سيرفرات قنوات مباشرة شغالة 100%) مع واجهة Grid وتبويب مستقل لجدول المباريات.",
+    "title": "تحديث RABIE TV v1.3.1",
+    "message": "تم إصلاح تشغيل البث المباشر (MPEG-TS و ClearKey DRM) في Albasha TV و AKO TV وإزالة السيرفرات المتوقفة من المصدر.",
     "action_url": "",
     "action_label": "حسناً"
   },
   "update": {
-    "latest_version_code": 11,
-    "latest_version_name": "1.3.0",
+    "latest_version_code": 12,
+    "latest_version_name": "1.3.1",
     "min_supported_version_code": 1,
     "force_update": false,
     "apk_url": "https://raw.githubusercontent.com/hoorabie/rabietv/main/rabie-tv-release.apk",
-    "changelog": "• واجهة جديدة بتبويبين: القنوات المباشرة (Grid لجميع السيرفرات) وجدول المباريات (سيرفر 1، 2، 3)\n• إضافة 5 سيرفرات قنوات جديدة تم فحصها حياً: Fallaka TV و Albasha TV و OTF TV و Dax TV و AKO TV بجانب General TV\n• تفعيل دعم روابط البث HTTP/HTTPS و ClearKey DRM"
+    "changelog": "• إصلاح تشغيل بث MPEG-TS وتنظيف ترويسات Albasha TV\n• إصلاح تشغيل قنوات AKO TV (الكأس، أبوظبي، شاهد الرياضية) مع دعم ClearKey DRM\n• إزالة السيرفرات التي كانت روابط البث فيها متوقفة من المصدر والإبقاء على السيرفرات الشغالة 100%"
   },
   "live_servers": [
     {
@@ -31,15 +31,6 @@
       "enabled": true
     },
     {
-      "id": "fallaka",
-      "name": "Fallaka TV",
-      "subtitle": "باقات رياضية وعربية",
-      "badge": "37 باقة",
-      "accent_color": "#0EA5E9",
-      "icon_text": "FALLAKA\nTV",
-      "enabled": true
-    },
-    {
       "id": "albasha",
       "name": "Albasha TV",
       "subtitle": "قنوات 4K و HD",
@@ -49,29 +40,11 @@
       "enabled": true
     },
     {
-      "id": "otf",
-      "name": "OTF TV",
-      "subtitle": "جودات متعددة سريعة",
-      "badge": "SD / HD",
-      "accent_color": "#F59E0B",
-      "icon_text": "OTF\nTV",
-      "enabled": true
-    },
-    {
-      "id": "dax",
-      "name": "Dax TV",
-      "subtitle": "باقات مشفرة ورياضية",
-      "badge": "Multi",
-      "accent_color": "#EF4444",
-      "icon_text": "DAX\nTV",
-      "enabled": true
-    },
-    {
       "id": "ako",
       "name": "AKO TV",
-      "subtitle": "قنوات وباقات متنوعة",
+      "subtitle": "الكأس وأبوظبي وشاهد",
       "badge": "28 باقة",
-      "accent_color": "#EC4899",
+      "accent_color": "#0EA5E9",
       "icon_text": "AKO\nTV",
       "enabled": true
     }
